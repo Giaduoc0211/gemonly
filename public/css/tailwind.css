@@ -6524,6 +6524,9 @@ body .slick-custom-section .slick-prev::before, body .slick-custom-section  .sli
 .justify-center {
   justify-content: center;
 }
+.custom-text-small {
+  font-size: 28px; /* Kích thước chữ nhỏ hơn */
+}
 .justify-between {
   justify-content: space-between;
 }

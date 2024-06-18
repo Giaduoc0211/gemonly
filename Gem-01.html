@@ -212,128 +212,127 @@
           id="header"
           class="[.home\_content_&]:fixed relative w-full z-50 [.fixed-top&]:fixed duration-500 transition-all"
         >
-          <div class="bg-primary [.fixed-top_&]:bg-opacity-50">
-            <div class="container max-w-screen-xl">
-              <div class="flex items-center justify-between h-[86px]">
-                <a href="index.html">
-                  <img
-                    src="public/thumbs/logo_2.png"
-                    alt="Logo"
-                    class="larger-logo"
-                    onerror="this.onerror=null; this.src='img/noimage.png';"
-                  />
-                </a>
-                <div class="flex justify-end flex-1">
-                  <nav class="flex-1 hidden min-w-0 menu-nav xl:block">
-                    <ul
-                      class="[&.menu]:static flex items-center justify-end menu"
-                    >
-                      <li>
-                        <a class="menu-item current-active" href="index.html">
-                          Trang chủ
-                        </a>
-                      </li>
-                      <li>
-                        <a class="menu-item" href="Gem-01.html"> Sản phẩm </a>
-                        <ul class="submenu">
-                          <li>
-                            <a href="Gem-01.html">Trạm tích điện GEM-01</a>
-                          </li>
-                        </ul>
-                      </li>
-
-                      <li>
-                        <a class="menu-item" href="javascript:;"> Tin tức </a>
-                        <ul class="submenu">
-                          <li><a href="Gem-01.html"> Tin tức </a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a class="menu-item" href="lien-he.html"> Liên hệ </a>
-                      </li>
-                      <span
-                        class="w-[1px] mx-6 h-4 bg-[#FFA800] opacity-50"
-                      ></span>
-                    </ul>
-                  </nav>
-                  <span
-                    class="inline-flex items-center justify-center cursor-pointer header-search w-9 h-9"
+        <div class="bg-primary [.fixed-top_&]:bg-opacity-50">
+          <div class="container max-w-screen-xl">
+            <div class="flex items-center justify-between h-[86px]">
+              <a href="index.html">
+                <img
+                  src="public/thumbs/logo_2.png"
+                  alt="Logo"
+                  class="larger-logo"
+                  onerror="this.onerror=null; this.src='img/noimage.png';"
+                />  
+              </a>
+              <div class="flex justify-end flex-1">
+                <nav class="flex-1 hidden min-w-0 menu-nav xl:block">
+                  <ul
+                    class="[&.menu]:static flex items-center justify-end menu"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="none"
+                    <li>
+                      <a class="menu-item current-active" href="#">
+                        Trang chủ
+                      </a>
+                    </li>
+                    <!-- <li>
+                      <a class="menu-item"href="javascript:void(0)" onclick="scrollToElement('thongtinsp')"> Sản phẩm </a>
+                      <ul class="submenu">
+                        <li>
+                          <ahref="javascript:void(0)" onclick="scrollToElement('thongtinsp')">Trạm tích điện GEM-01</ahref=>
+                        </li>
+                      </ul>
+                    </li> -->
+                    <!-- <li>
+                      <a class="menu-item" href="javascript:;"> Tin tức </a>
+                      <ul class="submenu">
+                        <li><ahref="javascript:void(0)" onclick="scrollToElement('thongtinsp')"> Tin tức </a></li>
+                      </ul>
+                    </li> -->
+                    <li>
+                      <a class="menu-item" href="lien-he.html"> Liên hệ </a>
+                    </li>
+                    <span
+                      class="w-[1px] mx-6 h-4 bg-[#FFA800] opacity-50"
+                    ></span>
+                  </ul>
+                </nav>
+                <span
+                  class="inline-flex items-center justify-center cursor-pointer header-search w-9 h-9"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                  >
+                    <path
+                      d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.35-4.35"
+                      stroke="#FFA800"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <div
+                  class="absolute right-0 justify-center hidden w-full p-5 transition-all md:w-1/2 current-active:flex top-full bg-slate-600 dekstop-search"
+                >
+                  <div class="w-full">
+                    <div
+                      class="relative flex flex-wrap items-stretch w-full input-group"
                     >
-                      <path
-                        d="M11 19a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM21 21l-4.35-4.35"
-                        stroke="#FFA800"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                      <input
+                        id="keyword"
+                        type="search"
+                        class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                        onkeypress="doEnter(event,'keyword');"
+                        placeholder="Tìm kiếm"
+                        aria-label="Tìm kiếm"
+                        aria-describedby="button-addon2"
+                        oninput="debounceAutocompleteSearch(event)"
                       />
-                    </svg>
-                  </span>
-                  <div
-                    class="absolute right-0 justify-center hidden w-full p-5 transition-all md:w-1/2 current-active:flex top-full bg-slate-600 dekstop-search"
-                  >
-                    <div class="w-full">
-                      <div
-                        class="relative flex flex-wrap items-stretch w-full input-group"
-                      >
-                        <input
-                          id="keyword"
-                          type="search"
-                          class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-                          onkeypress="doEnter(event,'keyword');"
-                          placeholder="Tìm kiếm"
-                          aria-label="Tìm kiếm"
-                          aria-describedby="button-addon2"
-                          oninput="debounceAutocompleteSearch(event)"
-                        />
-                      </div>
-                      <div class="bg-white overflow-y-scroll">
-                        <ul class="max-h-72" id="autocomplete_result"></ul>
-                      </div>
+                    </div>
+                    <div class="bg-white overflow-y-scroll">
+                      <ul class="max-h-72" id="autocomplete_result"></ul>
                     </div>
                   </div>
-                  <!--js thêm cho mỗi trang-->
-                  <div
-                    class="inline-flex items-center flex-shrink-0 header-info flex-nowrap"
+                </div>
+                <!--js thêm cho mỗi trang-->
+                <div
+                  class="inline-flex items-center flex-shrink-0 header-info flex-nowrap"
+                >
+                  <a
+                    id="hamburger"
+                    href="#menu"
+                    class="/h-[25px] /w-[25px] relative inline-flex xl:hidden items-center justify-center /before:bg-white /after:bg-white ml-5 uppercase"
+                    title="Menu"
                   >
-                    <a
-                      id="hamburger"
-                      href="#menu"
-                      class="/h-[25px] /w-[25px] relative inline-flex xl:hidden items-center justify-center /before:bg-white /after:bg-white ml-5 uppercase"
-                      title="Menu"
+                    <svg
+                      class="scale-110"
+                      width="40"
+                      height="29"
+                      viewBox="0 0 40 29"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        class="scale-110"
-                        width="40"
-                        height="29"
-                        viewBox="0 0 40 29"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect x="0.5" width="39" height="4" fill="white" />
-                        <rect
-                          x="0.5"
-                          y="7"
-                          width="39"
-                          height="4"
-                          fill="white"
-                        />
-                        <path
-                          d="M1.05682 17.2727H2.31818L5.28409 24.517H5.38636L8.35227 17.2727H9.61364V26H8.625V19.3693H8.53977L5.8125 26H4.85795L2.13068 19.3693H2.04545V26H1.05682V17.2727ZM12.9326 26V17.2727H18.1996V18.2102H13.9894V21.1591H17.9269V22.0966H13.9894V25.0625H18.2678V26H12.9326ZM28.2249 17.2727V26H27.2022L22.4465 19.1477H22.3613V26H21.3045V17.2727H22.3272L27.0999 24.142H27.1852V17.2727H28.2249ZM37.2669 17.2727H38.3237V23.0511C38.3237 23.6477 38.1831 24.1804 37.9018 24.6491C37.6234 25.1151 37.23 25.483 36.7214 25.7528C36.2129 26.0199 35.6163 26.1534 34.9317 26.1534C34.247 26.1534 33.6504 26.0199 33.1419 25.7528C32.6334 25.483 32.2385 25.1151 31.9572 24.6491C31.6788 24.1804 31.5396 23.6477 31.5396 23.0511V17.2727H32.5964V22.9659C32.5964 23.392 32.6902 23.7713 32.8777 24.1037C33.0652 24.4332 33.3322 24.6932 33.6788 24.8835C34.0283 25.071 34.4459 25.1648 34.9317 25.1648C35.4175 25.1648 35.8351 25.071 36.1845 24.8835C36.5339 24.6932 36.801 24.4332 36.9857 24.1037C37.1732 23.7713 37.2669 23.392 37.2669 22.9659V17.2727Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </a>
-                  </div>
+                      <rect x="0.5" width="39" height="4" fill="white" />
+                      <rect
+                        x="0.5"
+                        y="7"
+                        width="39"
+                        height="4"
+                        fill="white"
+                      />
+                      <path
+                        d="M1.05682 17.2727H2.31818L5.28409 24.517H5.38636L8.35227 17.2727H9.61364V26H8.625V19.3693H8.53977L5.8125 26H4.85795L2.13068 19.3693H2.04545V26H1.05682V17.2727ZM12.9326 26V17.2727H18.1996V18.2102H13.9894V21.1591H17.9269V22.0966H13.9894V25.0625H18.2678V26H12.9326ZM28.2249 17.2727V26H27.2022L22.4465 19.1477H22.3613V26H21.3045V17.2727H22.3272L27.0999 24.142H27.1852V17.2727H28.2249ZM37.2669 17.2727H38.3237V23.0511C38.3237 23.6477 38.1831 24.1804 37.9018 24.6491C37.6234 25.1151 37.23 25.483 36.7214 25.7528C36.2129 26.0199 35.6163 26.1534 34.9317 26.1534C34.247 26.1534 33.6504 26.0199 33.1419 25.7528C32.6334 25.483 32.2385 25.1151 31.9572 24.6491C31.6788 24.1804 31.5396 23.6477 31.5396 23.0511V17.2727H32.5964V22.9659C32.5964 23.392 32.6902 23.7713 32.8777 24.1037C33.0652 24.4332 33.3322 24.6932 33.6788 24.8835C34.0283 25.071 34.4459 25.1648 34.9317 25.1648C35.4175 25.1648 35.8351 25.071 36.1845 24.8835C36.5339 24.6932 36.801 24.4332 36.9857 24.1037C37.1732 23.7713 37.2669 23.392 37.2669 22.9659V17.2727Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
         </div>
         <div class="">
           <nav class="py-2 hbreadcrumb" aria-label="breadcrumb">
@@ -1869,20 +1868,20 @@
     </div>
     <nav id="menu" class="">
       <ul class="">
-        <li><a class="current-active" href="index.html"> Trang chủ </a></li>
-        <li>
-          <a class="" href="Gem-01.html"> Sản phẩm </a>
+        <li><a class="current-active" href="#"> Trang chủ </a></li>
+        <!-- <li>
+          <a class=""href="javascript:void(0)" onclick="scrollToElement('thongtinsp')"> Sản phẩm </a>
           <ul class="submenu" id="nav_main">
             <li>
               <a href="dbacousticchinhhang.html">GEM-01</a>
             </li>
           </ul>
-        </li>
-
+        </li> -->
+        
         <li>
           <a class="" href="javascript:;"> Tin tức </a>
           <ul class="submenu">
-            <li><a href="Gem-01.html"> Tin tức </a></li>
+            <li><ahref="javascript:void(0)" onclick="scrollToElement('thongtinsp')"> Tin tức </ahref=></li>
           </ul>
         </li>
         <li><a class="" href="download.html"> Download </a></li>
